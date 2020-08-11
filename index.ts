@@ -20,7 +20,7 @@ const env = config({
 if (args.city === undefined) {
     console.error("No city supplied");
     console.info("Usage:");
-    console.info("\t deno run --allow-net index.ts --city <City_Name>");
+    console.info("\tdeno run --allow-read --allow-env --allow-net index.ts --city <City_Name>");
     Deno.exit();
 }
 
